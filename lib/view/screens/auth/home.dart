@@ -30,7 +30,8 @@ class HomePage extends StatelessWidget {
                       CustomAppBar(
                           titleappbar: "Find Product",
                           onPressedIcon: () {},
-                          onPressedSearch: () {}),
+                          onPressedSearch: () {}, 
+                          onPressedFavorite: () {  },),
                       const CustomCardHome(
                           title: "A summer surprise", body: "Cashback 20%"),
                       const CustomTitleHome(title: "Categories"),
