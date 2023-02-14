@@ -11,6 +11,7 @@ import 'package:work_os/test.dart';
 import 'package:work_os/view/screens/auth/home.dart';
 import 'package:work_os/view/screens/homescreen.dart';
 import 'package:work_os/view/screens/items.dart';
+import 'package:work_os/view/screens/myFavourite.dart';
 import 'package:work_os/view/screens/productdetails.dart';
 
 import 'core/constant/roots.dart';
@@ -31,11 +32,13 @@ List<GetPage<dynamic>>? routes = [
   GetPage(name: AppRoute.successResetpassword, page: () => const SuccessResetPassword()),
   GetPage(name: AppRoute.successSignUp, page: () => const SuccessSignUp()),
   GetPage(name: AppRoute.onBoarding, page: () => const OnBoardingScreen()),
-  GetPage(name: AppRoute.verifyCodeSignUp, page: () => const VerifyCodeSignUp()),
+  GetPage(name: AppRoute.verifyCodeSignUp, page: () => const VerfiyCodeSignUp()),
   GetPage(name: AppRoute.homepage, page: () => const HomePage()),
   GetPage(name: AppRoute.homescreen, page: () => const HomeScreen()),
   GetPage(name: AppRoute.items, page: () => const Items()),
   GetPage(name: AppRoute.productdetails, page: () => const ProductDetails()),
+  GetPage(name: AppRoute.myFavourites, page: () => const MyFavorite()),
+
 
   
 

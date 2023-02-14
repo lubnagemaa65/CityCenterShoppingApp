@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:work_os/core/constant/roots.dart';
 
 import '../../controller/favourite_controller.dart';
 import '../../controller/itemscontroller.dart';
@@ -8,6 +9,7 @@ import '../../data/models/itemsModel.dart';
 import '../widgets/customAppBar.dart';
 import '../widgets/items/customlistitems.dart';
 import '../widgets/items/listcategoriesitems.dart';
+
 
 class Items extends StatelessWidget {
   const Items({Key? key}) : super(key: key);
@@ -24,8 +26,10 @@ class Items extends StatelessWidget {
         child: ListView(children: [
           CustomAppBar(
               titleappbar: "Find Product",
-              onPressedIcon: () {},
-              onPressedSearch: () {}),
+              
+              onPressedSearch: () {}, 
+              onPressedFavorite: () { 
+                Get.toNamed(AppRoute.myFavourites);               },),
           const SizedBox(height: 20),
           const ListCategoriesItems(),
           GetBuilder<ItemsControllerImp>(
